@@ -1,0 +1,143 @@
+:root{
+  --accent:#111827;
+  --muted:#6b7280;
+  --bg:#f3f4f6;
+  --card:#ffffff;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--accent);
+}
+
+.site-header {
+  width:100%;
+  background: var(--card);
+  padding:22px 0;
+  border-bottom:1px solid #e5e7eb;
+  box-shadow:0 4px 12px rgba(0,0,0,0.04);
+}
+
+.new-header {
+  max-width:850px;
+  margin:0 auto;
+  padding:0 22px;
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:20px;
+}
+
+.header-text {
+  text-align:center;
+  flex:1;
+}
+
+.main-name {
+  margin:0;
+  font-size:32px;
+  font-weight:700;
+  letter-spacing:1px;
+}
+
+.subtitle {
+  margin:5px 0 10px;
+  color:var(--muted);
+  font-size:16px;
+}
+
+.header-line {
+  width:200px;
+  height:2px;
+  background:#d1d5db;
+  margin:10px auto;
+  border-radius:2px;
+}
+
+.contact-row {
+  display:flex;
+  justify-content:center;
+  gap:15px;
+  font-size:14px;
+  color:var(--muted);
+  flex-wrap:wrap;
+}
+
+.square-dp {
+  width:140px;
+  height:140px;
+  border-radius:12px;  
+  object-fit:cover;
+  box-shadow:0 4px 10px rgba(0,0,0,0.15);
+}
+
+.container{
+  max-width:850px;
+  margin:30px auto;
+  padding:25px;
+  background:var(--card);
+  border-radius:10px;
+  box-shadow:0 6px 20px rgba(0,0,0,0.08);
+
+  display:flex;
+  flex-wrap:wrap;
+  gap:20px;
+}
+
+.section{
+  margin-top:10px;
+  flex: 1 1 48%;
+  box-sizing: border-box;
+}
+
+.section h2{
+  margin:0 0 10px 0;
+  font-size:18px;
+  
+  display:inline-block;
+  padding:6px 12px;
+  border-radius:8px;
+
+  background: linear-gradient(90deg, rgba(35, 35, 35, 0.244), rgba(229,231,235,0.95));
+  color:var(--accent);
+  box-shadow: 0 2px 6px rgba(16,24,40,0.04);
+}
+
+.item{
+  margin-bottom:12px;
+}
+
+ul{
+  margin:6px 0 0 18px;
+}
+
+li{
+  margin-bottom:6px;
+}
+
+.muted{
+  color:var(--muted);
+  font-size:14px;
+}
+
+@media (max-width:700px){
+  .new-header{
+    flex-direction:column;
+  }
+
+  .square-dp{
+    width:120px;
+    height:120px;
+  }
+
+  .container{
+    display:block;
+  }
+
+  .section{
+    flex:1 1 100%;
+  }
+}
